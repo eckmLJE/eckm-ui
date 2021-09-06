@@ -1,7 +1,7 @@
 import { css } from 'styled-components'
 import GothamBlackOTF from '../fonts/Gotham-Black.otf'
 import GothamBoldOTF from '../fonts/Gotham-Bold.otf'
-import GothamMediumOTF from '../fonts/Gotham-Medium.otf'
+import GothamBookOTF from '../fonts/Gotham-Book.otf'
 
 export const fonts = css`
   @font-face {
@@ -22,6 +22,6 @@ export const fonts = css`
     font-family: 'Gotham';
     font-style: normal;
     font-weight: 400;
-    src: url(${GothamMediumOTF});
+    src: url(${GothamBookOTF});
   }
 `

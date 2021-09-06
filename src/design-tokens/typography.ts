@@ -61,4 +61,30 @@ export const typography: {
       textTransform: 'uppercase',
     },
   ],
+  body: [
+    {
+      fontFamily: "'Gotham', sans-serif",
+      fontSize: '0.875rem',
+      fontWeight: 400,
+      lineHeight: 1.5,
+      letterSpacing: 'normal',
+      textTransform: 'none',
+    },
+    {
+      fontFamily: "'Gotham', sans-serif",
+      fontSize: '1rem',
+      fontWeight: 400,
+      lineHeight: 1.5,
+      letterSpacing: 'normal',
+      textTransform: 'none',
+    },
+    {
+      fontFamily: "'Gotham', sans-serif",
+      fontSize: '1.25rem',
+      fontWeight: 400,
+      lineHeight: 1.5,
+      letterSpacing: 'normal',
+      textTransform: 'none',
+    },
+  ],
 }

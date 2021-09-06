@@ -1,45 +1,36 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
-import { Headline } from '.'
+import { Body } from '.'
 
 export default {
-  title: 'Components/Headline',
-  component: Headline,
-  args: {
-    children: 'Headline text',
-    align: undefined,
-    level: undefined,
-  },
+  title: 'Components/Body',
+  component: Body,
   argTypes: {
     align: {
       control: { type: 'radio' },
     },
-    level: {
+    size: {
       control: { type: 'radio' },
     },
     ref: { table: { disable: true } },
     theme: { table: { disable: true } },
     forwardedAs: { table: { disable: true } },
-    as: {
-      options: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p'],
-      control: { type: 'select' },
-    },
+    as: { table: { disable: true } },
   },
-} as ComponentMeta<typeof Headline>
+} as ComponentMeta<typeof Body>
 
-const Template: ComponentStory<typeof Headline> = (args) => (
-  <Headline {...args} />
-)
+const Template: ComponentStory<typeof Body> = (args) => <Body {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
-  children: 'Headline text',
+  children: 'Body text',
   align: undefined,
-  level: undefined,
+  size: undefined,
+  bold: undefined,
 }
 
 export const Centered = Template.bind({})
 Centered.args = {
-  children: 'Headline text',
+  children: 'Body text',
   align: 'center',
 }

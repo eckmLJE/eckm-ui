@@ -36,7 +36,7 @@ export const reset = css`
   body {
     min-height: 100vh;
     font-family: system-ui, sans-serif;
-    text-rendering: optimizeSpeed;
+    text-rendering: optimizeLegibility;
   }
 
   img,

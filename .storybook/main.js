@@ -13,13 +13,6 @@ module.exports = {
     }
     return config
   },
-  // typescript: {
-  //   reactDocgenTypescriptOptions: {
-  //     propFilter: (prop) =>
-  //       (prop.parent ? !/node_modules/.test(prop.parent.fileName) : true) &&
-  //       ['theme', 'ref', 'forwardedAs'].indexOf(prop.name) < 0,
-  //   },
-  // },
 }
 
 function resolve(dir) {

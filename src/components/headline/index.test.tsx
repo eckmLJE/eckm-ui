@@ -5,6 +5,6 @@ import { Default } from './index.stories'
 describe('Card', () => {
   it('renders', () => {
     render(<Default {...Default.args} />)
-    expect(screen.getByText('test')).toBeInTheDocument()
+    expect(screen.getByText('Headline text')).toBeInTheDocument()
   })
 })

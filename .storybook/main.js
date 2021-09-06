@@ -4,13 +4,8 @@ module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
     '@storybook/addon-links',
+    '@storybook/addon-docs',
     '@storybook/addon-essentials',
-    {
-      name: '@storybook/addon-docs',
-      options: {
-        configureJSX: true,
-      },
-    },
   ],
   webpackFinal: async (config) => {
     config.resolve.alias = {
@@ -18,13 +13,13 @@ module.exports = {
     }
     return config
   },
-  typescript: {
-    reactDocgenTypescriptOptions: {
-      propFilter: (prop) =>
-        (prop.parent ? !/node_modules/.test(prop.parent.fileName) : true) &&
-        excludedProps.indexOf(prop.name) < 0,
-    },
-  },
+  // typescript: {
+  //   reactDocgenTypescriptOptions: {
+  //     propFilter: (prop) =>
+  //       (prop.parent ? !/node_modules/.test(prop.parent.fileName) : true) &&
+  //       ['theme', 'ref', 'forwardedAs'].indexOf(prop.name) < 0,
+  //   },
+  // },
 }
 
 function resolve(dir) {

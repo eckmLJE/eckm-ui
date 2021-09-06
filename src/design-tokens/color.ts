@@ -1,4 +1,5 @@
 const baseColors = {
+  black: 'rgb(45, 45, 45)',
   blue: 'rgb(70, 122, 166)',
   orange: 'rgb(220, 102, 36)',
   green: 'rgb(42, 96, 73)',
@@ -6,6 +7,7 @@ const baseColors = {
 }
 
 export const color = {
-  primary: baseColors.blue,
-  secondary: baseColors.orange,
+  black: { default: baseColors.black },
+  primary: { default: baseColors.blue },
+  secondary: { default: baseColors.orange },
 }

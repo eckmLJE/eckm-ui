@@ -12,6 +12,8 @@ export const reset = css`
   h2,
   h3,
   h4,
+  h5,
+  h6,
   p,
   figure,
   blockquote,
@@ -34,7 +36,7 @@ export const reset = css`
   body {
     min-height: 100vh;
     font-family: system-ui, sans-serif;
-    text-rendering: optimizeSpeed;
+    text-rendering: optimizeLegibility;
   }
 
   img,

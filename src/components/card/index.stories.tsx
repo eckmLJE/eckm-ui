@@ -1,15 +1,15 @@
-import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Card } from ".";
+import React from 'react'
+import { ComponentStory, ComponentMeta } from '@storybook/react'
+import { Card } from '.'
 
 export default {
-  title: "Components/Card",
+  title: 'Components/Card',
   component: Card,
-} as ComponentMeta<typeof Card>;
+} as ComponentMeta<typeof Card>
 
-const Template: ComponentStory<typeof Card> = (args) => <Card {...args} />;
+const Template: ComponentStory<typeof Card> = (args) => <Card {...args} />
 
-export const Primary = Template.bind({});
-Primary.args = {
-  children: "test",
-};
+export const Default = Template.bind({})
+Default.args = {
+  children: 'test',
+}

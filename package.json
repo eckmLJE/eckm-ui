@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest src",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=05bcb78dc473"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +30,7 @@
     "@typescript-eslint/parser": "^4.30.0",
     "babel-loader": "^8.2.2",
     "babel-plugin-styled-components": "^1.13.2",
+    "chromatic": "^6.7.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.25.1",
@@ -41,5 +43,7 @@
     "stylelint-order": "^4.1.0",
     "ts-jest": "^27.0.5",
     "typescript": "^4.4.2"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "eckm-ui@1.0.0"
 }

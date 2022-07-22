@@ -14,7 +14,7 @@ export const typography: {
     },
     {
       fontFamily: "'Gotham', sans-serif",
-      fontSize: '2.5rem',
+      fontSize: '3rem',
       fontWeight: 600,
       lineHeight: 1.1,
       letterSpacing: 'normal',
